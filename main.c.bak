@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int
+add2(int a, int b)
+{
+    return a+b;
+}
+
+int
+add3(int a, int b, int c)
+{
+    int r = add2(a,b);
+    return r+c;
+}
+
+int main(int argc, char **argv)
+{
+    printf("hahah %d\n", add3(1,2,3));
+}
